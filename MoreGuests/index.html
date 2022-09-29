@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let guestList = ["Mr. Farhan", "Mr. Kamran", "Ms. Sanam"];
+        console.log(`I would like to Invite ${guestList[0]}`);
+        console.log(`I would like to Invite ${guestList[1]}`);
+        console.log(`I would like to Invite ${guestList[2]}`);
+        console.log(`${guestList[1]} is not able to attend the Cermony`);
+        guestList[1] = "Mr. Rehman";
+        console.log(`I would like to Invite ${guestList[1]}`);
+        console.log("Now we have more space for Dinner");
+        guestList.unshift("Mr Saleem");
+        guestList.splice(2,0,"Ms Samreen")
+        guestList.push("Mr Zaheer");
+        console.log(`I would like to Invite ${guestList[0]}`);
+        console.log(`I would like to Invite ${guestList[1]}`);
+        console.log(`I would like to Invite ${guestList[2]}`);
+        console.log(`I would like to Invite ${guestList[3]}`);
+        console.log(`I would like to Invite ${guestList[4]}`);
+        console.log(`I would like to Invite ${guestList[5]}`);
+       
+       
+    </script>
+</body>
+</html>
