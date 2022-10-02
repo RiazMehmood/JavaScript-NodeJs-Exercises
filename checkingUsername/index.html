@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const current_users = ["admin", "Riaz", "Waseem", "Raheel", "Rehan"];
+      const new_users = ["waseem", "Murtaza", "REHAN", "Adil", "Zaheer"];
+      const _new_users = [];
+      const _current_users = []
+    
+      new_users.forEach((k) => {
+        _new_users.push(k.toLowerCase());
+      });
+      current_users.forEach((m)=>{
+        _current_users.push(m.toLowerCase())
+      })
+   
+     
+      for(let i=0; i<_current_users.length; i++ ){
+        for(let j=0; j<_new_users.length; j++){
+          if(_current_users[i]==_new_users[j]){
+            console.log(`${_new_users[j]} is not available`);
+            delete _new_users[j]
+          }
+          
+        }
+      }
+      
+      _new_users.forEach((remaining)=>{
+        console.log(`${remaining} user is available.`);
+      })
+
+
+    </script>
+  </body>
+</html>
